@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;600;700&family=Epilogue:wght@400;700;800&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,6 +9,28 @@
 body{
     background: black;
     color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn{
+    background: #db0001;
+    color: white;
+    padding: 15px 24px;
+    font-size: 21px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+h2{
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.btn:hover{
+    background: #9b0202;
+    transition: 1s;
 }
 
 .header{
@@ -16,13 +40,14 @@ body{
     background-size: cover;
     background-position: center;
     position: relative;
-    padding: 25px 12%;
+    padding: 25px 0px;
 }
 
 /* navbar */
 
 nav{
-    
+    margin: auto;
+    max-width: 1180px;
     display: flex;align-items: center;
     justify-content: space-between;
 }
@@ -62,7 +87,8 @@ nav{
 /* header content */
 
 .header-content{
-    border: 1px solid white;
+    
+    
     position: absolute;
     top: 50%;
     left: 50%;
@@ -72,12 +98,173 @@ nav{
     align-items: center;
     text-align: center;
     margin-top: 100px;
-    /* width: 989px; */
+    width: 989px;
 }
 
 .header-content h1{
-    font-size: 60px;
-    font-weight: 600px;
+    font-size: 48px;
+    font-weight: 900px;
     line-height: 70px;
     max-width: 650px;
+    white-space: nowrap;
+    margin-right: 257px;
+}
+
+.header-content h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.email-signup{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    gap: 8px;
+}
+
+.email-signup input{
+    flex: 1;
+    padding: 18px 110px 18px 12px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    
+    font-size: 15px;
+
+}
+
+.fa-greater-than{
+    font-size: 18px;
+}
+
+/* feature section */
+
+.container{
+    border: 1px solid white;
+    max-width: 1180px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.feature-section{
+    padding: 80px 0px;
+}
+.feature-container{
+    display: flex;
+    gap: 30px;
+    
+}
+.feature-description{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: 12px;
+}
+.feature-description p{
+    font-size: 28px;
+}
+.feature-image{
+    flex-basis: 50%;
+    
+}
+
+.feature-image img{
+    width: 100%;
+}
+
+#feature-container-rev{
+    flex-direction: row-reverse;
+}
+
+/* faq */
+.faq-section-container{
+    margin: 50px auto;
+    text-align: center;
+    
+}
+.faq-section h2{
+    text-align: center;
+}
+
+.accordian{
+   
+    margin: 20px auto;
+    width: 100%;
+    /* max-width: 750px; */
+    display: flex;
+    flex-direction: column;
+    gap: -5px;
+}
+
+
+
+.accordian li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordian li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+.accordian li label:hover{
+    background: #757474;
+    transition: 1s;
+}
+
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.accordian .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.accordian input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.faq-section-container .email-signup{
+    max-width: 600px;
+    margin: 20px auto;
+    
+}
+
+/* FOOTER */
+
+.footer-container{
+    text-align: center;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    color: white;
 }
